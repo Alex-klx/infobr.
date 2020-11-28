@@ -81,6 +81,10 @@ body img{
 	text-transform: uppercase;
 	text-decoration: underline;
 }
+.basec img{
+		width: 100%;
+		margin-bottom: 5px;
+}
 .basec .ol{
 	text-align: center;
 	margin: 0px;
@@ -127,7 +131,8 @@ body img{
 		width: 80%;
 		height: 60%;
 	}
-	iframe{
-		height: : 50%;
+	.basec img{
+		width: 100%;
+		margin-bottom: 5px;
 	}
 }
