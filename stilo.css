@@ -1,0 +1,88 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+body{  background-color: #DFDFDF;
+	position: relative;
+	width: 100%; 
+}
+body img{
+	display: block;
+	position: relative;
+	width: 25%;
+	margin: 0 auto;
+	margin-top:12px;
+}
+.agendar{
+	background-color: white;
+	display: block;
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 10px;
+	text-align: center;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.agendar h1, h2, button{
+	position: relative;
+}
+.agendar h1{
+	font-family: Arial black;
+	font-size: 100%;
+}
+.agendar h2{
+	font-size: 100%;
+	font-family: Arial;
+}
+.agendar button{
+	font-family: Arial black;
+	width: 100%;
+	font-size: 200%;
+	position: relative;
+}
+.caixa{
+
+	background-color: white;
+	display: block;
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 10px;
+	text-align: center;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.basec{
+	background-color: white;
+	display: block;
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 10px;
+	margin-top: 10px;
+	padding: 10px;
+}
+.basec h1{
+	text-align: center;
+}
+.basec ol{
+	text-align: center;
+}
+.basec li{
+	list-style: none;
+	display: inline-block;
+	position: relative;
+	width: 30%;
+	background-color: #DFDFDF;
+	margin: 10px 0px 10px 0px;
+	padding: 5px;
+}
+@media only screen and (min-width: 600px) {
+}
