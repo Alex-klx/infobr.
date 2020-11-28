@@ -16,10 +16,10 @@ body img{
 	margin-top:12px;
 }
 .agendar{
-	background-color: red;
+	background-color: white;
 	display: block;
 	position: relative;
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 	border-radius: 10px;
 	text-align: center;
@@ -54,7 +54,7 @@ body img{
 	background-color: white;
 	display: block;
 	position: relative;
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 	border-radius: 10px;
 	text-align: center;
@@ -67,7 +67,7 @@ body img{
 	background-color: white;
 	display: block;
 	position: relative;
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 	border-radius: 10px;
 	margin-top: 10px;
@@ -83,6 +83,8 @@ body img{
 }
 .basec .ol{
 	text-align: center;
+	margin: 0px;
+	padding: 0px;
 }
 .basec .li{
 	list-style: none;
@@ -122,7 +124,7 @@ body img{
 
 @media only screen and (max-width: 600px) {
 	.basec .li{
-		width: 40%;
+		width: 80%;
 		height: 60%;
 	}
 	iframe{
