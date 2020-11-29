@@ -1,19 +1,27 @@
 @charset "UTF-8";
 *{
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	font-family: arial;
 }
 body{  background-color: #DFDFDF;
 	position: relative;
-	width: 100%; 
+	width: 100%;
+	padding-top: 36px;
 }
-body img{
-	display: block;
+.menu{
+	position: fixed;
+	background-color: #33278D;
+	margin-top:-36px;
+	width: 100%;
+	z-index: 1;
+	box-shadow: 1px 1px 6px rgba(0,0,0, .5);
+}
+.menu img{
 	position: relative;
-	width: 25%;
+	display: block;
+	height: 36px;
 	margin: 0 auto;
-	margin-top:12px;
 }
 .agendar{
 	background-color: white;
@@ -27,6 +35,7 @@ body img{
 	padding-bottom: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
+	box-shadow: 1px 1px 6px rgba(0,0,0, .5);
 }
 .agendar h1, h2, button{
 	position: relative;
@@ -34,6 +43,7 @@ body img{
 .agendar h1{
 	font-family: Arial black;
 	font-size: 100%;
+	padding-top: 5px;
 }
 .agendar h2{
 	font-size: 100%;
@@ -62,6 +72,7 @@ body img{
 	padding-bottom: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
+	box-shadow: 1px 1px 6px rgba(0,0,0, .5);
 }
 .basec{
 	background-color: white;
@@ -72,6 +83,7 @@ body img{
 	border-radius: 10px;
 	margin-top: 10px;
 	padding: 10px;
+	box-shadow: 1px 1px 6px rgba(0,0,0, .5);
 }
 .basec h1{
 	text-align: center;
@@ -126,7 +138,7 @@ body img{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: px) {
 	.basec .li{
 		width: 80%;
 		height: 60%;
