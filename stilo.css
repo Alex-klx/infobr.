@@ -93,6 +93,7 @@ body{  background-color: #143850;
 	height: 25px;
 	width: 30%;
 	text-align: center;
+	border-radius: 5px;
 }
 .caixa #msgOpc{
 	position: relative;
@@ -100,6 +101,7 @@ body{  background-color: #143850;
 	height: 25px;
 	width: 40%;
 	text-align: center;
+	border-radius: 5px;
 }
 .caixa button{position: relative;
    	 display: inline-block;
