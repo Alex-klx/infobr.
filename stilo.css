@@ -24,6 +24,34 @@ body{  background-color: #143850;
 	font-family: arial black;
 	color: white;
 }
+.caixaDep{
+	background-color: white;
+	display: block;
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px;
+	box-shadow: 1px 1px 6px rgba(0,0,0, .5);
+	border-radius:0px  0px 10px 10px;
+}
+.caixaDep div{
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	border:2px solid #1F92B1;
+	font-size: 140%;
+	font-family: arial black , sans-serif;
+	border-radius: 5px;
+	color:#143850;
+}
+.caixaDep a{
+	color:#143850;
+	font-size: 100%;
+	font-family: arial black, sans-serif;
+	text-decoration: none;
+}
 .agendar{
 	background-color: white;
 	display: block;
@@ -135,9 +163,10 @@ body{  background-color: #143850;
 	text-transform: uppercase;
 	text-decoration: underline;
 }
-.basec iframe{
+.basec img{
 		width: 100%;
 		margin-bottom: 5px;
+		border: 1px solid #1F92B1;
 }
 .basec .ol{
 	text-align: center;
@@ -209,7 +238,7 @@ footer h2{
 		width: 80%;
 		height: 60%;
 	}
-	.basec iframe{
+	.basec img{
 		width: 100%;
 		margin-bottom: 5px;
 	}
