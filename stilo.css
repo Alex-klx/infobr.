@@ -93,7 +93,6 @@ body{  background-color: #143850;
 	height: 100%;
 }
 .caixa{
-
 	background-color: white;
 	display: block;
 	position: relative;
@@ -111,7 +110,7 @@ body{  background-color: #143850;
 	text-align: center;
 	color: #143850;
 	font-family: arial black;
-	font-size: 150%;
+	font-size: 120%;
 	text-transform: uppercase;
 	position: relative;
 }
