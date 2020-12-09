@@ -9,6 +9,7 @@ body{  background-color: #143850;
 	width: 100%;
 	padding-top: 44px;
 }
+/*Menu-----------------------------*/
 .menu{
 	position: fixed;
 	background-color: #095E7D;
@@ -24,6 +25,7 @@ body{  background-color: #143850;
 	font-family: arial black;
 	color: white;
 }
+/*Departamentos tit-----------------------------*/
 .caixaDep{
 	background-color: white;
 	display: block;
@@ -52,6 +54,10 @@ body{  background-color: #143850;
 	font-family: arial black, sans-serif;
 	text-decoration: none;
 }
+.fixcap{
+	text-decoration: underline;
+}
+/*Agendar section-----------------------------*/
 .agendar{
 	background-color: white;
 	display: block;
@@ -61,19 +67,25 @@ body{  background-color: #143850;
 	border-radius: 10px;
 	text-align: center;
 	margin-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 0px 10px 10px 10px;
 	box-shadow: 1px 1px 6px rgba(0,0,0, .5);
-}
-.agendar h1, h2, button{
-	position: relative;
 }
 .agendar h1{
 	font-family: Arial black;
 	font-size: 120%;
 	padding-top: 5px;
 	color: #143850;
+}
+.agendar a{
+	font-family: Arial black;
+	position: relative;
+	background-color: #1F92B1;
+	color: white;
+	text-decoration: none;
+
+}
+a{
+	text-decoration: none;
 }
 .agendar button{
 	font-family: Arial black;
@@ -92,7 +104,8 @@ body{  background-color: #143850;
 	width: 100%;
 	height: 100%;
 }
-.caixa{
+/*Link whatsapp -------------------------------*/
+/*.caixa{
 	background-color: white;
 	display: block;
 	position: relative;
@@ -142,7 +155,97 @@ body{  background-color: #143850;
 	 background-color: #1F92B1;
     	 color: white;
     	 margin-bottom: 8px;
+}*/
+/*Caixa do Sobre------------------------------------*/
+
+.caixaSob{
+	background-color: white;
+	display: block;
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 10px;
+	text-align: center;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-shadow: 1px 1px 6px rgba(0,0,0, .5);
 }
+.caixaSob h2{
+	text-align: center;
+	color: #143850;
+	font-family: arial black;
+	font-size: 120%;
+	text-transform: uppercase;
+	position: relative;
+}
+.grupSob{
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.caixaSob p{
+	position: relative;
+	display: inline-block;
+	width: 68%;
+	text-align: left;
+	font-size: 100%;
+	vertical-align: top;
+
+}
+.grupSob img{
+	position: relative;
+	display: inline-block;
+	width: 15%;
+	border-radius: 10%;
+	border:.5px solid black;
+}
+/*entgggggggggggggggggggg-------------------*/
+.caixaEntg img{
+	position: relative;
+	display: inline-block;
+	width: 15%;
+	border-radius: 10%;
+	border:.5px solid black;
+}
+.caixaEntg h2{
+	text-align: center;
+	color: #143850;
+	font-family: arial black;
+	font-size: 120%;
+	text-transform: uppercase;
+	position: relative;
+}
+.caixaEntg .grupSob img{
+	position: relative;
+	display: inline-block;
+	width: 15%;
+	border-radius: 10%;
+}
+.caixaEntg p{
+	position: relative;
+	display: inline-block;
+	width: 68%;
+	text-align: left;
+	font-size: 100%;
+	vertical-align: top;
+}
+.caixaEntg{
+	background-color: white;
+	display: block;
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 10px;
+	text-align: center;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-shadow: 1px 1px 6px rgba(0,0,0, .5);
+}
+/*Base produtos----------------------------*/
 .basec{
 	background-color: white;
 	display: block;
@@ -153,14 +256,6 @@ body{  background-color: #143850;
 	margin-top: 10px;
 	padding: 10px;
 	box-shadow: 1px 1px 6px rgba(0,0,0, .5);
-}
-.basec h1{
-	text-align: center;
-	color: #143850;
-	font-family: arial black;
-	font-size: 200%;
-	text-transform: uppercase;
-	text-decoration: underline;
 }
 .basec img{
 		width: 100%;
@@ -184,53 +279,35 @@ body{  background-color: #143850;
 }
 .li figcaption{
 	background-color: #1F92B1;
-	position: relative;
-	display: block;
-	width: 100%;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-bottom-right-radius: 7px;
-	border-bottom-left-radius: 7px;
-	color: white;
-	font-family: arial;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    color: white;
+    font-family: arial;
 
 }
-footer div{
+/*Base dos produtos---------------------------*/
+footer{
 	background-color: #095E7D;
 	position: relative;
 	display: block;
 	width: 100%;
-	height: 40px;
 	margin-top: 10px;
 	text-align: center;
-
-}
-footer div img{
-	position: relative;
-	display: inline-block;
-	height: 70%;
-	top: 50%;
-	transform: translate(0,-50%);
-	margin: auto 5px;
 }
 footer h2{
 	position: relative;
 	display: inline-block;
 	font-family: arial;
-	color: #1F92B1;
+	color: white;
 	font-size: 100%;
+	padding: 10px 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
+/*Roda pe-------------------------*/
 
 @media only screen and (max-width: 600px) {
 	.basec .li{
