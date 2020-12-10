@@ -67,9 +67,15 @@ body{  background-color: #143850;
 	border-radius: 10px;
 	text-align: center;
 	margin-top: 10px;
-	padding: 0px 10px 10px 10px;
+	padding: 10px;
 	box-shadow: 1px 1px 6px rgba(0,0,0, .5);
 }
+.agendar img{
+	position: relative;
+	display: block;
+	width: 100%;
+}
+/*
 .agendar h1{
 	font-family: Arial black;
 	font-size: 120%;
@@ -103,7 +109,7 @@ a{
 	display: block;
 	width: 100%;
 	height: 100%;
-}
+} */
 /*Link whatsapp -------------------------------*/
 /*.caixa{
 	background-color: white;
@@ -202,13 +208,14 @@ a{
 	border:.5px solid black;
 }
 /*entgggggggggggggggggggg-------------------*/
-.caixaEntg img{
+/*.caixaEntg img{
 	position: relative;
 	display: inline-block;
 	width: 15%;
 	border-radius: 10%;
 	border:.5px solid black;
 }
+
 .caixaEntg h2{
 	text-align: center;
 	color: #143850;
@@ -230,7 +237,7 @@ a{
 	text-align: left;
 	font-size: 100%;
 	vertical-align: top;
-}
+}*/
 .caixaEntg{
 	background-color: white;
 	display: block;
@@ -240,10 +247,13 @@ a{
 	border-radius: 10px;
 	text-align: center;
 	margin-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding:10px;
 	box-shadow: 1px 1px 6px rgba(0,0,0, .5);
+}
+.caixaEntg img{
+	position: relative;
+	display: block;
+	width: 100%;
 }
 /*Base produtos----------------------------*/
 .basec{
