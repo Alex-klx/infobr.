@@ -5,7 +5,7 @@ carrArray = [
     '<li>Limpeza preventiva e corretiva</li>',
     '<li>Recuperação de carcaça em notebooks</li>',
     '<li>Visitas técnicas</li>',
-    '<li>Suporte Remoto</li>',
+    '<li>Suporte Remoto</li>' ,
     '<li>Detecção de problemas em computadores</li>',
     '<li>Remoção de vírus</li>',
     '<li>Instalação de programas</li>',
