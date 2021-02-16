@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@font-face {
+    font-family: "gadugigi";
+    src: url("gadugi.ttf");
+  }
+
 body{
     background-color: #D2D3D5;
 }
@@ -34,7 +39,7 @@ body{
 }
 
 #cabecalhoContra h2{
-    font-family: gadugi;
+    font-family: gadugigi;
     font-size: 250%;
     color: white;
 }
@@ -68,12 +73,12 @@ body{
     position: relative;
 }
 #sobreMim h3{
-    font-family: gadugi;
+    font-family: gadugigi;
     font-size: 20pt;
     color: #4B4B4D;
 }
 #sobreMim p{
-    font-family: gadugi;
+    font-family: gadugigi;
 }
 #sobreMim #txtGrup,img{
     flex: 1 1 auto;
@@ -99,14 +104,14 @@ body{
 }
 #insUl li{
     color:#4B4B4D;
-    font-family: gadugi;
+    font-family: gadugigi;
     margin:18px auto 0 18px;
 }
 #orgServcs{
-    font-family: gadugi;
+    font-family: gadugigi;
 }
 #orgServcs h3{
-    font-family: gadugi;
+    font-family: gadugigi;
     font-size: 20pt;
     color: #4B4B4D;
 }
