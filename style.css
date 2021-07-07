@@ -1,127 +1,402 @@
-@charset "UTF-8";
-@font-face {
-    font-family: "gadugigi";
-    src: url("gadugi.ttf");
-  }
-
-body{
-    background-color: #D2D3D5;
-}
 *{
-    padding: 0;
     margin: 0;
+    padding:0;
 }
-#cabecalho{
-    position: fixed;
-    background: rgb(166,3,192);
-    background: linear-gradient(90deg, rgba(166,3,192,1) 0%, rgba(249,164,55,1) 82%);
-    padding: 10px 0 10px 0;
-    text-align: center;
-    width: 100%;
-    z-index: 5;
-}
-#cabecalho h2{
-    font-family: gadugigi;
-    font-size: 250%;
+a{
+    text-decoration: none;
     color: white;
 }
-/*        Contra cabecalho ----------------------------------------------*/
-
-#cabecalhoContra{
-    background: rgb(166,3,192);
-    background: linear-gradient(90deg, rgba(166,3,192,1) 0%, rgba(249,164,55,1) 82%);
-    padding: 10px 0 10px 0;
-    text-align: center;
+button{
+    padding: 5px 15px;
+    font-weight: bolder;
+    background-color: #0077ED;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 2px solid #595959;
+    border-right: 1.5px solid #595959;
+    cursor: pointer;
+}
+/*button:focus{
+    border-top: 2px solid #595959;
+    border-left: 1.5px solid #595959;
+    border-bottom: none;
+    outline: none;
+        border-right: none;
+}
+/*CAbecalho -----------------------------------------------------------------*/
+#cabecalho{
     display: block;
     position: relative;
     width: 100%;
-    visibility: hidden;
+    background-color: white;
+    background-image: url(https://thumbs.dreamstime.com/b/conceito-global-da-tecnologia-digital-17575170.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.747);
+    padding: 15px 0;
+    font-family:  Gadugi, Arial, Helvetica, sans-serif;
 }
-
-#cabecalhoContra h2{
-    font-family: gadugigi;
-    font-size: 250%;
-    color: white;
+#cabecalho::after{
+    content: 's';
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.63);
+    z-index: 0;
+    width: 100%;
+    top:0%;
+    height: 100%;
 }
-/*           contra cabecalho ------------------------------------------------------------*/
-#sectionBase{
+#cxImgTxt{
     position: relative;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+    font-family:  Gadugi, Arial, Helvetica, sans-serif;
+    z-index: 1;
 }
-#imgSection img{
+#dispflex{
     position: relative;
+    display: flex;
     width: 100%;
 }
-#sectionBase{
-    background-color:transparent;
+#cxImgTxt img{
+    border: solid rgba(255, 255, 255, 0.973) 3px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    display: block;
+}
+#Txt{
+    margin-left: 10px;
+    width: 100%;
+    font-family:  Gadugi, Arial, Helvetica, sans-serif;
+}
+#Txt h2{
+    color: rgba(255, 255, 255, 0.973);
+    font-family:  Gadugi, Arial, Helvetica, sans-serif;
+}
+#Txt p{
+    color: rgb(233, 233, 233);
+    font-family:  Gadugi, Arial, Helvetica, sans-serif;
+}
+#Txt button{
+    margin-top: 5px;
+}
+#cxnavbuts{
+    text-align: left;
+    margin-top: 10px;
+}
+
+#cxnavbuts button{
+    margin-right: 5px;
+}
+/*dddd*/
+
+#base{
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #afafaf;
+}
+#secItens{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    background: #afafaf;
+    width: 95%;
+    margin: 0 auto;
+}
+#secItens .item{
+    flex: 1 1 220px;
+    max-width: 300px;
+    position: relative;
+    display: block;
+    margin: 15px 15px;
+    background-color: white;
+    padding: 20px 15px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 1px rgba(43, 43, 43, 0.425);
+}
+#secItens .item img{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto 10px auto;
+}
+#secItens p{
+    font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
+    margin:10px 0;
+    color: rgb(80, 80, 80);
+    font-size: 11pt;
+}
+#secItens h2{
+    font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
+    color: #212124;
+    font-weight: normal;
+    border-top: 1px solid rgba(51, 51, 51, 0.479);
+    margin-top: 5px;
+    border-width: 100%;
+    font-size: 16pt;
+    padding-top: 5px;
+}
+#secItens h3{
+    font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
+    color: #00a650;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+
+
+@media only screen and (max-width: 565px) {
+    #cabecalho{
+        background-position-y: -15px;
+    }
+    #secItens .item{
+        margin: 10px auto;
+    }
+
+    #cabecalho ol{
     position: absolute;
     display: block;
-    width: 100%;
-    top: 18%;
-}
-#contPrinc{
-    display: block;
-    position: relative;
-    background-color: white;
-    width: 90%;
-    margin: 0 auto;
-    border-radius: 8px;
-    padding: 20px;
-}
-#sobreMim{
-    display: flex;
-    flex-wrap: nowrap;
-    position: relative;
-}
-#sobreMim h3{
-    font-family: gadugigi;
-    font-size: 20pt;
-    color: #4B4B4D;
-}
-#sobreMim p{
-    font-family: gadugigi;
-}
-#sobreMim #txtGrup,img{
-    flex: 1 1 auto;
-}
-#sobreMim img{
-    position: relative;
-    max-width: 170px;
-    border:3px solid rgba(249, 165, 55, 0.795);
-    border-radius:50%;
-}
-#controltxt{
-    display: block;
-    position: relative;
+    right: 0px;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
+    width: 40%;
 }
-#txtGrup{
+#cabecalho ol li{
+    list-style: none;
+    padding: 2px 5px;
+    text-align: center;
+    margin: 2px 5px;
+    border-radius: 3px;
+    border: .3px solid rgba(0, 0, 0, 0.178);
+    font-size: 16px;
+    font-family: sans-serif, Arial;
+    color: white;
+    background-color: #0077ED;
+    width: 100%;
+}
+
+#cxImgTxt img{
+    border: solid rgba(255, 255, 255, 0.973) 3px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
     position: relative;
     display: block;
 }
-#insUl{
+#Txt{
+    margin-left: 10px;
+    font-family:  Gadugi, Arial, Helvetica, sans-serif;
+}
+#Txt h2{
+    font-family:  Gadugi, Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.973);
+}
+#Txt p{
+    font-family:  Gadugi, Arial, Helvetica, sans-serif;
+    color: rgb(233, 233, 233);
+    font-size: 9pt;
+}
+#Txt button{
+    margin-top: 5px;
+    font-size: 9pt;
+    padding: 3.5px 6px;
+}
+#cxnavbuts{
+    text-align: left;
+    margin-top: 5px;
+    font-size: 8pt;
+}
+
+#cxnavbuts button{
+    font-size: 9pt;
+}
+}
+/*
+@media only screen and (min-width: 1300px) {
+    #cxnavbuts{
+        text-align: center;
+        margin-top: 15px;
+        position: absolute;
+        display: block;
+        top: -15px;
+        right: 0;
+    }
+    
+    #cxnavbuts button{
+        margin: 0 5px;
+        font-size: 10pt;
+    }
+}
+*/
+
+#corr{
+    font-size: 8pt;
+    font-weight: bold;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 5px;
+    display: block;
+}
+footer{
+    background-image: url("cab.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+footer h2{
+    width: 100%;
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.582);
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+.ui-pdp-icon--full {
+    fill: #00a650;
+    position: relative;
+    top: 5px;
+    height: 16px;
+    width: 56px;
+    margin-top: -1px;
+}
+    input{
+    font-size: 70%;
+    font-weight: bolder;
+    background-color: #00a650c5;
+    border: 1px solid #00a650;
+    padding: 1px 2px;
+    display: block;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 60px;
+    border-radius: 3px;
+    right: 15px;
+    font-family:  Gadugi, Arial, Helvetica, sans-serif;
+}
+.a1111{
+width: 15px;
+}
+.centapp{
+position: absolute;
+display: block;
+width: 30px;
+z-index: 3;
+right: 42%;
+top: 10px;
+fill: #0077ED;
+}
+
+
+
+/*pop*/
+
+
+#cxsobre{
+    position: fixed;
+    display: none;
+    width: 80%;
+    background-color: #0077ee;
+    border:3px solid #005bb6;
+    border-radius: 2.5px;
+    padding: 10px;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 30%;
+    transform: translate(-50%,-0);
+    font-family:  Gadugi, Arial, Helvetica, sans-serif;
+}
+#cxsobre h2{
+    font-family:  Gadugi, Arial, Helvetica, sans-serif;
     color: white;
 }
-#insUl li{
-    color:#4B4B4D;
-    font-family: gadugigi;
-    margin:18px auto 0 18px;
+#cxsobre p{
+    color: rgb(226, 226, 226);
 }
-#orgServcs{
-    font-family: gadugigi;
+
+#secItens .item .divdd{
+    color:rgb(34, 34, 34);
+    font-size: 10.5pt;
 }
-#orgServcs h3{
-    font-family: gadugigi;
-    font-size: 20pt;
-    color: #4B4B4D;
+
+#cxpopup{
+    position: absolute;
+    display: none;
+    width: 80%;
+    background-color: white;
+    border: 2px solid #0077ED;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0 10px 5px 10px;
+    font-family: Gadugi;
+    color: #0077ED;
 }
-#orgServcs h3::before{
-    content:'';
-    width: 100%;
-    height: 5px;
-    background-color:#4b4b4d81;
-    position: relative;
+#cxpopup p{
+    color: rgb(15, 15, 15);
+    font-size: 11pt;
+}
+#cxpopup button{
+    margin: 18px 0 18px 0;
+}
+#xxxx{
+    z-index: 3;
+    background-color: red;
+}
+
+#xxxxxxx{
+    position: absolute;
     display: block;
-    margin-top: 10px;
-    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: -6px;
+    cursor: pointer;
+}
+#xxxxxxx::after{
+    content: '';
+    display: block;
+    position: relative;
+    background-color: #0363c4;
+    width: 4px;
+    border-radius: 4px;
+    height: 100%;
+    transform: rotate(-45deg);
+}
+#xxxxxxx::before{
+    content: '';
+    display: block;
+    position: absolute  ;
+    background-color: #0077ED;
+    width: 4px;
+    height: 100%;
+    transform: rotate(45deg);
+    border-radius: 4px;
+}
+
+#cxpopupeco{
+    position: absolute;
+    display: none;
+    width: 80%;
+    background-color: white;
+    border: 2px solid #0077ED;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0 10px 5px 10px;
+    font-family: Gadugi;
+    color: #0077ED;
 }
