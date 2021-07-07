@@ -1,48 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>infoBR</title>
+    <title>Telebrasil Celulares</title>
+    <link rel="shortcut icon" href="https://supportalex.github.io/telebrasil.catalogo/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="script.js"></script>
-    <header id="cabecalho">
-        <h2>infoBR</h2>
-    </header>
-    <header id="cabecalhoContra">
-        <h2>infoBR</h2>
-    </header>
-    <div id="imgSection">
-        <img src="capaTitleFooter.jpg">
+    <script>
+        function tapSobre(){
+            var cxsobre = document.getElementById("cxpopup")
+            cxsobre.style.display='block'
+        }
+        function closeSobre(){
+            var cxsobre = document.getElementById("cxpopup")
+            cxsobre.style.display='none'
+        }
+        function tapSaberEco(){
+            alert('Em desenvolvimento.')
+            var cxsobre = document.getElementById("cxpopupeco")
+            cxsobre.style.display='none'
+        }
+        function tapLoc(){
+            alert('Em desenvolvimento.')
+        }
+    </script>
+    <div id="cxpopup">
+        <div onclick="closeSobre()" id="xxxxxxx"></div>
+        <img src="imgsobre.png" style="width:20%; display: block; margin: 15px auto 0px auto; ">
+        <h2>Sobre nós</h2>
+        <p>
+            Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste
+            Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste
+            Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste
+            Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste
+        </p>
+        <button>Enviar uma Mensagem</button>
     </div>
-    <section id="sectionBase">
-        <div id='contPrinc'>
-            <div id="sobreMim">
-                <div id="txtGrup">
-                    <div id="controltxt">
-                        <h3>Alex Souza</h3>
-                        <p>Técnico em informática, e calouro em web desenvolvimento.</p>
-                    </div>
-                </div>
-                <img src="alexSouza.jpg">
-            </div>
-            <!--                              Serviços                            -->
-            <div id="servicosCx">
-                <div id='orgServcs'>
-                    <h3>Serviços</h3>
-                    <p>Suporte técnico em informática e tecnologias...</p>
-                    <ul id="insUl">
-                        <!-- Add por JS-->
-                    </ul>
+
+    <div id="cxpopupeco">
+        <div onclick="closeSobre()" id="xxxxxxx"></div>
+        <img src="imgsobre.png" style="width:20%; display: block; margin: 15px auto 0px auto; ">
+        <h2>E-Coleta Telebrasil</h2>
+        <p>
+            Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste
+            Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste
+            Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste
+            Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste
+        </p>
+        <button>Enviar uma Mensagem</button>
+    </div>
+
+    <header id="cabecalho">
+        <div id="cxImgTxt">
+            <div id="dispflex">
+                <img src="https://supportalex.github.io/telebrasil.catalogo/icon.png">
+            <div id="Txt">
+                <h2>Telebrasil Celulares</h2>
+                <p>
+                    Assistência Técnica | Acessórios para smartphones em geral, tudo para informática e proteção para seus gadgets.
+                </p>
+                <div id="cxnavbuts">
+                    <button onclick="tapSobre()" id="butSobre">
+                        Sobre
+                    </button>
+                    <button onclick="tapLoc()" id="butLoc">
+                        Localização
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
-    <footer>
+        </div>
+    </header>
 
-    </footer>
+    <div id="base">
+        <section class="trsec" id="secItens">
+ <!--prx item   ---------------------------------------------------------------------------------------- -->
+
+            <div class="item">
+               <img src="sust.png">
+                
+                <h2>Não há sustentabilidade sem um esforço coletivo.</h2>
+                <p>
+                    Conheça nossa e-coleta, a coleta de aparelhos telefonicos, e celulares sem uso, ou sem funcionamento, para doações, ou descarte correto.
+                </p>
+                <button onclick="tapSaberEco()">Saber Mais...</button>
+                <input type="text" value="10/07/21">
+            </div>
+
+<!--prx item   ---------------------------------------------------------------------------------------- -->
+            
+        </section>
+
+    </div>
+        <footer>
+            <h2 id="créditos">© 2021 Telebrasil Celulares<br> A tecnologia move o mundo - Steve Jobs</h2>
+        </footer>
 </body>
 </html>
